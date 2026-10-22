@@ -1,0 +1,9 @@
+node_modules/
+examples/**/slides-standalone.html
+dist/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+*.bak-*

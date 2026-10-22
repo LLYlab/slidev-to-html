@@ -1,0 +1,21 @@
+{
+  "name": "slidev-to-html",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Generic Slidev to single-file HTML converter with dependency doctor and installer.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "setup": "node tools/setup.mjs",
+    "doctor": "node tools/doctor.mjs",
+    "build:example": "node tools/slidev-singlefile.mjs examples/minimal --out slides-standalone.html",
+    "test": "npm run doctor && npm run build:example"
+  },
+  "devDependencies": {
+    "@slidev/cli": "53.0.0",
+    "@slidev/theme-default": "0.25.0",
+    "vite": "8.3.4"
+  }
+}
